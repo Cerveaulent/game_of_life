@@ -4,6 +4,9 @@ class Cell:
         self.y = pos_y
         self.state = 0
 
+    def __repr__(self):
+        return str(self.state)
+
     def kill(self):
         self.state = 0
 
