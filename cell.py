@@ -3,6 +3,7 @@ class Cell:
         self.x = pos_x
         self.y = pos_y
         self.state = 0
+        self.next_state = 0
 
     def __repr__(self):
         return str(self.state)
@@ -18,3 +19,7 @@ class Cell:
             return True
         else:
             return False
+
+    def update(self):
+        if self.state != self.next_state:
+            self.state = self.next_state
