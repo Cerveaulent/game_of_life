@@ -15,17 +15,17 @@ def print_grid(grid):
 
 def main():
     grid = [[Cell(x, y) for x in range(5)] for y in range(5)]
-    grid[2][2].state = 1
-    grid[3][2].state = 1
-    grid[3][3].state = 1
+  #  grid[2][2].state = 1
+  #  grid[3][2].state = 1
+  #  grid[3][3].state = 1
     print_grid(grid)
     step = 0
-    while step < 100:
+    while step < 2:
         rule(grid)
         update_all(grid)
         print_grid(grid)
         step += 1
-        wait(0.5)
+        wait(1)
 
 
 if __name__ == '__main__':
