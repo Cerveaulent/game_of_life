@@ -15,10 +15,7 @@ class Cell:
         self.state = 1
 
     def is_dead(self):
-        if self.state == 0:
-            return True
-        else:
-            return False
+        return self.state == 0
 
     def update(self):
         if self.state != self.next_state:
